@@ -45,7 +45,7 @@
                 <i class="icofont-phone"></i> +236 72 01 77 70 / 70 01 77 70
             </div>
             <div class="social-links float-right">
-                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="https://twitter.com/ars_snaprca" class="twitter"><i class="icofont-twitter"></i></a>
                 <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
                 <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
                 <a href="#" class="skype"><i class="icofont-skype"></i></a>

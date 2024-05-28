@@ -36,7 +36,26 @@ class CreatePostsTables extends Migration
             'featured_image' => [
                 'type' => 'VARCHAR',
                 'constraint' => 255,
-            ]
+            ],
+            'tags' => [
+                'type' => 'TEXT',
+                'null' => true,
+            ],
+            'meta-keywords' => [
+                'type' => 'TEXT',
+                'null' => true,
+            ],
+            'meta-description' => [
+                'type' => 'TEXT',
+                'null' => true,
+            ],
+            'visibility' => [
+                'type' => 'INT',
+                'constraint' => 11,
+                'default' => 1
+            ],
+            'created_at timestamp default current_timestamp',
+            'updated_at timestamp default current_timestamp on update current_timestamp'
         ]);
 
         $this->forge->addKey('id', true);
