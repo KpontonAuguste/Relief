@@ -1,18 +1,79 @@
-<!-- Vendor JS Files -->
-<script src="/vendor/jquery/jquery.min.js"></script>
-<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="/vendor/jquery.easing/jquery.easing.min.js"></script>
-<script src="/vendor/php-email-form/validate.js"></script>
-<script src="/vendor/jquery-sticky/jquery.sticky.js"></script>
-<script src="/vendor/venobox/venobox.min.js"></script>
-<script src="/vendor/waypoints/jquery.waypoints.min.js"></script>
-<script src="/vendor/counterup/counterup.min.js"></script>
-<script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="/vendor/aos/aos.js'); ?>"></script>
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+     <div class="footer-top">
+         <div class="container">
+             <div class="row">
 
-<!-- Template Main JS File -->
-<script src="/js/main.js"></script>
+                 <div class="col-lg-3 col-md-6 footer-info">
+                     <h3>ARS</h3>
+                     <p>
+                         A108 Adam Street <br>
+                         NY 535022, USA<br><br>
+                         <strong>Phone:</strong> (+236) 72 01 77 70 / 70 01 77 70<br>
+                         <strong>Email:</strong> africanreliefservice@yahoo.com<br>
+                     </p>
+                     <div class="social-links mt-3">
+                         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                         <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                     </div>
+                 </div>
 
-</body>
+                 <div class="col-lg-2 col-md-6 footer-links">
+                     <h4>Useful Links</h4>
+                     <ul>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                     </ul>
+                 </div>
 
-</html>
+                 <div class="col-lg-3 col-md-6 footer-links">
+                     <h4>Our Services</h4>
+                     <ul>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                         <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                     </ul>
+                 </div>
+
+                 <div class="col-lg-4 col-md-6 footer-newsletter">
+                     <h4>Newsletter</h4>
+                     <p>Rejoignez notre newsletter et soyez le premier a etre informer des actualites de l'ONG ARS</p>
+                     <form action="<?= route_to('newsletter.handler') ?>" method="post">
+                         <input type="email" name="email"><input type="submit" value="Subscribe">
+                     </form>
+
+                 </div>
+
+             </div>
+         </div>
+     </div>
+ </footer><!-- End Footer -->
+
+ <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+ <!-- Vendor JS Files -->
+ <script src="/vendor/jquery/jquery.min.js"></script>
+ <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="/vendor/jquery.easing/jquery.easing.min.js"></script>
+ <script src="/vendor/php-email-form/validate.js"></script>
+ <script src="/vendor/jquery-sticky/jquery.sticky.js"></script>
+ <script src="/vendor/venobox/venobox.min.js"></script>
+ <script src="/vendor/waypoints/jquery.waypoints.min.js"></script>
+ <script src="/vendor/counterup/counterup.min.js"></script>
+ <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+ <script src="/vendor/aos/aos.js'); ?>"></script>
+
+ <!-- Template Main JS File -->
+ <script src="/js/main.js"></script>
+
+ </body>
+
+ </html>

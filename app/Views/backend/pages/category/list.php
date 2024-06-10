@@ -34,12 +34,11 @@
                                 <?php
                                 if ($allCategory) {
                                     foreach ($allCategory as $all) {
-
                                 ?>
                                         <tr>
                                             <td scope="row"><?php echo $all['id']; ?></td>
                                             <td><?php echo $all['name']; ?></td>
-                                            <td>------</td>
+                                            <td><a class="btn btn-sm btn-primary" href="<?php echo $all['id'] ?>">Modifier</a></td>
                                         </tr>
                                 <?php
                                     }

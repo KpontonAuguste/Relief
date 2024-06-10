@@ -67,7 +67,7 @@
             <nav class="nav-menu float-right d-none d-lg-block">
                 <ul>
                     <li class="active"><a href="#header">Accueil</a></li>
-                    <li><a href="#about">Actualites</a></li>
+                    <li><a href="<?= route_to('actualite.home') ?>">Actualites</a></li>
                     <li class="drop-down"><a href=""><span>Qui sommes nous?</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Missions</a></li>

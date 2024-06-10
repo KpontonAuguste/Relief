@@ -12,7 +12,7 @@ class AdminController extends BaseController
     public function index()
     {
         $data = [
-            'pageTitle' => 'Panneu Admin'
+            'pageTitle' => 'Panneau Admin'
         ];
 
         return view('backend/pages/home', $data);

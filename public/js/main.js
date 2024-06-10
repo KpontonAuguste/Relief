@@ -1,10 +1,10 @@
 /**
-* Template Name: Mamba - v2.0.1
-* Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-!(function($) {
+ * Template Name: Mamba - v2.0.1
+ * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
+ * Author: BootstrapMade.com
+ * License: https://bootstrapmade.com/license/
+ */
+/*!(function($) {
   "use strict";
 
   // Toggle .header-scrolled class to #header when page is scrolled
@@ -168,4 +168,4 @@
     easing: "ease-in-out-back"
   });
 
-})(jQuery);
+})(jQuery);*/

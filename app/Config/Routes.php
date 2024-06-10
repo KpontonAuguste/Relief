@@ -5,7 +5,10 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Home::index', ['as' => 'home.index']);
+$routes->post('newsletter', 'Newsletter::formHandler', ['as' => 'newsletter.handler']);
+
+$routes->get('actualite', 'ActualiteController::index', ['as' => 'actualite.home']);
 
 $routes->group('admin', static function ($routes) {
 

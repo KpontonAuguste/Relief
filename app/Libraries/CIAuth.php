@@ -53,4 +53,18 @@ class CIAuth
             return null;
         }
     }
+
+    public static function role()
+    {
+        $session = session();
+        if ($session->has('logged_in')) {
+            if ($session->has('userdata')) {
+                return $session->get('userdata')['role'];
+            } else {
+                return null;
+            }
+        } else {
+            return null;
+        }
+    }
 }
