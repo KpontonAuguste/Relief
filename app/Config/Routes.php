@@ -23,6 +23,8 @@ $routes->group('admin', static function ($routes) {
         $routes->get('listPost', 'AdminController::listPost', ['as' => 'admin.post']);
         $routes->get('post', 'AdminController::postForm', ['as' => 'admin.post.form']);
         $routes->post('addPost', 'AdminController::addPost', ['as' => 'admin.post.handler']);
+
+        $routes->get('listNewsletter', 'AdminController::listNewsletter', ['as' => 'admin.newsletter']);
     });
 
     $routes->group('', [], static function ($routes) {

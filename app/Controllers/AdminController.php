@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 use App\Libraries\CIAuth;
 use App\Models\CategoryPost;
 use App\Models\Post;
+use App\Models\NewsletterModel;
 
 class AdminController extends BaseController
 {
@@ -193,5 +194,21 @@ class AdminController extends BaseController
         ];
 
         return view('backend/pages/post/list', $data);
+    }
+
+    // Newsletter
+
+    public function listNewsletter()
+    {
+        $newsletter = new NewsletterModel();
+        $allNewsletter = $newsletter->findAll();
+
+
+        $data = [
+            'pageTitle' => 'Liste des emails inscrit a la Newsletter',
+            'allNewsletter' => $allNewsletter
+        ];
+
+        return view('backend/pages/newsletter/list', $data);
     }
 }
