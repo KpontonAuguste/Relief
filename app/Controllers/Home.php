@@ -6,8 +6,10 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('header') .
-            view('home/index') .
-            view('footer');
+        $data = [
+            'pageTitle' => 'ARS - Page d\'accueil'
+        ];
+
+        return view('pages/home/index', $data);
     }
 }

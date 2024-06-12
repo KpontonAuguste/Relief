@@ -1,3 +1,8 @@
+<?= $this->extend('layout/page-layout') ?>
+<?= $this->section('content') ?>
+
+
+
 <!-- ======= Hero Section ======= -->
 <section id="hero">
     <div class="hero-container">
@@ -124,3 +129,5 @@
 
     </div>
 </section><!-- End Services Section -->
+
+<?= $this->endSection() ?>
