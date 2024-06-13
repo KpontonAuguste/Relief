@@ -30,6 +30,10 @@ class CreatePostulerTable extends Migration
                 'type' => 'varchar',
                 'constraint' => '255',
             ],
+            'email' => [
+                'type' => 'varchar',
+                'constraint' => '255',
+            ],
             'adresse' => [
                 'type' => 'varchar',
                 'constraint' => '255',
