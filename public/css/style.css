@@ -1469,3 +1469,33 @@ section {
     display: inline-block;
   }
 }
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #428bca;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #428bca;
+}
+
+/*.clients .swiper-slide img {
+  opacity: 0.5;
+  filter: grayscale(100%);
+}*/
+
+.clients .swiper-slide img:hover {
+  filter: none;
+  opacity: 1;
+}

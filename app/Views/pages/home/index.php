@@ -62,6 +62,25 @@
     </div>
 </section><!-- End Hero -->
 
+<!-- ======= Clients Section ======= -->
+<section id="clients" class="clients">
+    <div class="container" data-aos="fade-up">
+        <div class="section-title">
+            <h2>Ils nous font confiance</h2>
+        </div>
+        <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="/img/client/logo_CHF.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="/img/client/logo_UNICEF.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="/img/client/logo_Ministere.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="/img/client/logo_BIOFORCE.png" class="img-fluid" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+</section><!-- End Clients Section -->
+
 <!-- ======= Services Section ======= -->
 <section id="services" class="services section-bg">
     <div class="container">

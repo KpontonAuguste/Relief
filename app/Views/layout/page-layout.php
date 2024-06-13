@@ -22,6 +22,7 @@
     <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="/vendor/aos/aos.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
@@ -55,6 +56,7 @@
     <script src="/vendor/waypoints/jquery.waypoints.min.js"></script>
     <script src="/vendor/counterup/counterup.min.js"></script>
     <script src="/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="/vendor/aos/aos.js"></script>
 
     <!-- Template Main JS File -->
