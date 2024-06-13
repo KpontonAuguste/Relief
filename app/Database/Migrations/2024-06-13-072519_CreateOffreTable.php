@@ -44,7 +44,6 @@ class CreateOffreTable extends Migration
             ],
             'offre_date_end' => [
                 'type' => 'DATE',
-                'constraint' => '255',
             ],
             'offre_file' => [
                 'type' => 'VARCHAR',

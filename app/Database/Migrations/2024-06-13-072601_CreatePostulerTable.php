@@ -14,10 +14,7 @@ class CreatePostulerTable extends Migration
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
-            'postuler_date' => [
-                'type' => 'timestamp',
-                'constraint' => '255',
-            ],
+            'postuler_date timestamp default current_timestamp',
             'postuler_file' => [
                 'type' => 'varchar',
                 'constraint' => '255',

@@ -1,0 +1,58 @@
+ERROR - 2024-06-13 09:37:58 --> mysqli_sql_exception: Erreur de syntaxe près de '(255) NOT NULL,
+	`offre_file` VARCHAR(255) NOT NULL,
+	`user_id` INT(255) NOT NUL' à la ligne 10 in C:\wamp64\www\projet-ars\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\projet-ars\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `o...', 0)
+#1 C:\wamp64\www\projet-ars\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `o...')
+#2 C:\wamp64\www\projet-ars\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `o...')
+#3 C:\wamp64\www\projet-ars\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `o...')
+#4 C:\wamp64\www\projet-ars\app\Database\Migrations\2024-06-13-072519_CreateOffreTable.php(61): CodeIgniter\Database\Forge->createTable('offre')
+#5 C:\wamp64\www\projet-ars\system\Database\MigrationRunner.php(873): App\Database\Migrations\CreateOffreTable->up()
+#6 C:\wamp64\www\projet-ars\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\wamp64\www\projet-ars\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\wamp64\www\projet-ars\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\wamp64\www\projet-ars\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\wamp64\www\projet-ars\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-13 09:38:51 --> mysqli_sql_exception: Too-big precision 255 specified for 'postuler_date'. Maximum is 6. in C:\wamp64\www\projet-ars\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\projet-ars\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\wamp64\www\projet-ars\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\wamp64\www\projet-ars\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\wamp64\www\projet-ars\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\wamp64\www\projet-ars\app\Database\Migrations\2024-06-13-072601_CreatePostulerTable.php(57): CodeIgniter\Database\Forge->createTable('postuler')
+#5 C:\wamp64\www\projet-ars\system\Database\MigrationRunner.php(873): App\Database\Migrations\CreatePostulerTable->up()
+#6 C:\wamp64\www\projet-ars\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\wamp64\www\projet-ars\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\wamp64\www\projet-ars\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\wamp64\www\projet-ars\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\wamp64\www\projet-ars\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-13 09:39:26 --> mysqli_sql_exception: Valeur par défaut invalide pour 'postuler_date' in C:\wamp64\www\projet-ars\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\projet-ars\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\wamp64\www\projet-ars\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\wamp64\www\projet-ars\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\wamp64\www\projet-ars\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\wamp64\www\projet-ars\app\Database\Migrations\2024-06-13-072601_CreatePostulerTable.php(57): CodeIgniter\Database\Forge->createTable('postuler')
+#5 C:\wamp64\www\projet-ars\system\Database\MigrationRunner.php(873): App\Database\Migrations\CreatePostulerTable->up()
+#6 C:\wamp64\www\projet-ars\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\wamp64\www\projet-ars\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\wamp64\www\projet-ars\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\wamp64\www\projet-ars\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\wamp64\www\projet-ars\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-13 09:40:04 --> mysqli_sql_exception: Valeur par défaut invalide pour 'postuler_date' in C:\wamp64\www\projet-ars\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\projet-ars\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\wamp64\www\projet-ars\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\wamp64\www\projet-ars\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\wamp64\www\projet-ars\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\wamp64\www\projet-ars\app\Database\Migrations\2024-06-13-072601_CreatePostulerTable.php(57): CodeIgniter\Database\Forge->createTable('postuler')
+#5 C:\wamp64\www\projet-ars\system\Database\MigrationRunner.php(873): App\Database\Migrations\CreatePostulerTable->up()
+#6 C:\wamp64\www\projet-ars\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\wamp64\www\projet-ars\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\wamp64\www\projet-ars\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\wamp64\www\projet-ars\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\wamp64\www\projet-ars\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
