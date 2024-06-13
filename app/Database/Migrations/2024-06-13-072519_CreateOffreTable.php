@@ -50,14 +50,6 @@ class CreateOffreTable extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '255',
             ],
-            'created_at' => [
-                'type' => 'timestamp',
-                'constraint' => '255',
-            ],
-            'updated_at' => [
-                'type' => 'timestamp',
-                'constraint' => '255',
-            ],
             'user_id' => [
                 'type' => 'INT',
                 'constraint' => '255',
