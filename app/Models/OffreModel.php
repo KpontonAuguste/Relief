@@ -12,7 +12,7 @@ class OffreModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['offre_reference, offre_description, ofrre_localisation, offre_type, offre_duration, offre_nb_poste, offre_status, offre_date_end, offre_file, created_at, updated_at, user_id' ];
+    protected $allowedFields    = ['offre_reference, offre_description, ofrre_localisation, offre_type, offre_duration, offre_nb_poste, offre_status, offre_date_end, offre_file, user_id' ];
 
     // Dates
     protected $useTimestamps = false;
