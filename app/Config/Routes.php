@@ -25,6 +25,9 @@ $routes->group('admin', static function ($routes) {
         $routes->post('addPost', 'AdminController::addPost', ['as' => 'admin.post.handler']);
 
         $routes->get('listNewsletter', 'AdminController::listNewsletter', ['as' => 'admin.newsletter']);
+        $routes->get('listOffre', 'AdminController::listOffre', ['as' => 'admin.offre']);
+        $routes->get('offre','AdminController::formOffre', ['as' => 'admin.offre']);
+        $routes->post('addOffre', 'AdminController::addOffre', ['as' => 'admin.offre.handler']);
     });
 
     $routes->group('', [], static function ($routes) {

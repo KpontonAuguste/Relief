@@ -7,6 +7,7 @@ use App\Libraries\CIAuth;
 use App\Models\CategoryPost;
 use App\Models\Post;
 use App\Models\NewsletterModel;
+use App\Models\OffreModel;
 
 class AdminController extends BaseController
 {
@@ -92,6 +93,11 @@ class AdminController extends BaseController
         ];
 
         return view('backend/pages/post/add', $data);
+    }
+
+    public function formOffre()
+    {
+        return view('backend/pages/offre/add');
     }
 
     public function addPost()
@@ -211,4 +217,153 @@ class AdminController extends BaseController
 
         return view('backend/pages/newsletter/list', $data);
     }
+
+        // liste des Offres//
+
+        public function listOffre()
+    {
+        $offre = new OffreModel();
+        $allOffre = $offre->findAll();
+
+
+        $data = [
+        'offre_reference' => 'liste de reference',
+         'description' => 'liste desciption',
+        'offre_localisation' => 'liste de localisation',
+        'offre_type' => 'liste de type',
+        'offre_duration' => 'liste du temps',
+        'offre_nb_poste' => 'liste de poste',
+         'offre_status' => 'liste status',
+        'offre_date_end' => 'liste de fin',
+         'offre_file' => 'liste file',
+         'allOffre' => $allOffre
+        ];
+
+        return view('backend/pages/offre/list', $data);
+    }
+
+    public function addOffre()
+    {
+        $request = \Config\Services::request();
+
+        /*$isValid = $this->validate([
+            'offre_reference' => [
+                'rules' => 'required|is_unique[offre_reference]',
+                'errors' => [
+                    'required' => 'reference de offre',
+                    'is_unique' => 'Ce offre existe '
+                ]
+                ],
+            'description' => [
+                'rules' => 'required|is_unique[description]',
+                'errors' => [
+                    'required' => 'description de offre',
+                    'is_unique' => 'Ce offre existe '
+                ]
+                ],
+                'offre_localisation' => [
+                    'rules' => 'required|is_unique[offre_localisation]',
+                    'errors' => [
+                        'required' => 'localisation de offre',
+                        'is_unique' => 'localisation '
+                    ]
+                    ],
+                'offre_type' => [
+                    'rules' => 'required|is_unique[offre_type]',
+                    'errors' => [
+                        'required' => 'type de offre',
+                        'is_unique' => 'Ce type existe '
+                        ]
+                    ],
+                    'offre_duration' => [
+                        'rules' => 'required|is_unique[offre_duration]',
+                        'errors' => [
+                            'required' => 'dure de offre',
+                            'is_unique' => 'la dure  '
+                            ]
+                        ],
+                        'offre_nb_poste' => [
+                            'rules' => 'required|is_unique[offre_nb_poste]',
+                            'errors' => [
+                                'required' => 'nombre de poste',
+                                'is_unique' => 'poste xiste  '
+                                ]
+                            ],
+                            'offre_status' => [
+                                'rules' => 'required|is_unique[offre_status]',
+                                'errors' => [
+                                    'required' => 'status offre',
+                                    'is_unique' => 'status existe '
+                                    ]
+                                ],
+                                'offre_date_end' => [
+                                    'rules' => 'required|is_unique[offre_date_end]',
+                                    'errors' => [
+                                        'required' => 'date de fin offre',
+                                        'is_unique' => 'date de fin  '
+                                        ]
+                                    ],
+                                    'offre_file' => [
+                                        'rules' => 'required|is_unique[offre_file]',
+                                        'errors' => [
+                                            'required' => 'file offre',
+                                            'is_unique' => 'existe  '
+                                            ]
+                                        ],
+
+        ]);
+
+        if (!$isValid) {
+            return view('backend/pages/offre/add', [
+                'pageTitle' => 'le nom de offre',
+                'validation' => $this->validator
+            ]);
+        } else {
+            
+           /* $offre_reference = $request->getVar('offre_reference');
+            $description = $request->getVar('description');
+            $offre_localisation = $request->getVar('offre_localisation');
+            $offre_type = $request->getVar('offre_type');
+            $offre_duration = $request->getVar('offre_duration');
+            $offre_nb_poste = $request->getVar('offre_nb_poste');
+            $offre_status = $request->getVar('offre_status');
+            $offre_date_end = $request->getVar('offre_date_end');
+            $offre_file = $request->getVar('offre_file');
+            $save = $offre->save([
+                'offre_reference' => $offre_reference,
+                'description' => $description,
+                'offre_localisation' => $offre_localisation,
+                'offre_type'=> $offre_type,
+                'offre_duration' => $offre_duration,
+                'offre_nb_poste' => $offre_nb_poste, 
+                'offre_status'=> $offre_status, 
+                'offre_date_end' => $offre_date_end,
+                'offre_file'=> $offre_file,
+                'user_id' => 1
+            ]);*/
+
+            $data = [
+                'offre_reference' => $request->getVar('offre_reference'),
+                'description' => $request->getVar('description'),
+                'offre_localisation' => $request->getVar('offre_localisation'),
+                'offre_type' => $request->getVar('offre_type'),
+                'offre_duration' => $request->getVar('offre_duration'),
+                'offre_nb_poste' => $request->getVar('offre_nb_poste'),
+                'offre_status' => $request->getVar('offre_status'),
+                'offre_date_end' => $request->getVar('offre_date_end'),
+                'offre_file' => $request->getVar('offre_file'),
+                'user_id' => 1
+            ];
+            $offre = new OffreModel();
+            $save = $offre->insert($data);
+
+            if (!$save) {
+                return redirect('admin.offre');
+            } else {
+                return redirect('admin.offre');
+            }
+        
+        
+    }
+
 }

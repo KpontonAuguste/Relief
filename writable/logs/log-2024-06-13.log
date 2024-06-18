@@ -56,3 +56,5 @@ Stack trace:
 #9 C:\wamp64\www\projet-ars\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
 #10 C:\wamp64\www\projet-ars\spark(102): CodeIgniter\CLI\Console->run()
 #11 {main}
+INFO - 2024-06-13 13:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-13 13:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

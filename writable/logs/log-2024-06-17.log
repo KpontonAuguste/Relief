@@ -1,0 +1,32 @@
+INFO - 2024-06-17 09:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-17 09:02:12 --> mysqli_sql_exception: La table 'ars.offre_reference' n'existe pas in C:\wamp64\www\Relief\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\Relief\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\wamp64\www\Relief\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\wamp64\www\Relief\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\wamp64\www\Relief\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\wamp64\www\Relief\system\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\Relief\system\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('kllooooipo', 'offre_reference', Array, NULL, 'offre_reference')
+#6 C:\wamp64\www\Relief\system\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('offre_reference', 'offre_reference', 'kllooooipo', Array, Array)
+#7 C:\wamp64\www\Relief\system\Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 C:\wamp64\www\Relief\app\Controllers\AdminController.php(228): CodeIgniter\Controller->validate(Array)
+#9 C:\wamp64\www\Relief\system\CodeIgniter.php(942): App\Controllers\AdminController->addOffre()
+#10 C:\wamp64\www\Relief\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#11 C:\wamp64\www\Relief\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\Relief\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-06-17 09:02:12 --> La table 'ars.offre_reference' n'existe pas
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `offre_reference`
+WHERE `offre_reference` = :offre_reference:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(311): CodeIgniter\Validation\StrictRules\Rules->is_unique('kllooooipo', 'offre_reference', [...], null, 'offre_reference')
+ 4 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('offre_reference', 'offre_reference', 'kllooooipo', [...], [...])
+ 5 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\AdminController.php(228): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminController->addOffre()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
