@@ -188,9 +188,13 @@ class AdminController extends BaseController
 
     public function listPost()
     {
+        $post = new Post();
+        $allPost = $post->getAll();
+
         $data = [
             'pageTitle' => 'Liste des publications',
-            'validation' => null
+            'validation' => null,
+            'allPost' => $allPost
         ];
 
         return view('backend/pages/post/list', $data);

@@ -20,9 +20,13 @@ $routes->group('admin', static function ($routes) {
         $routes->get('category', 'AdminController::categoryForm', ['as' => 'admin.category.form']);
         $routes->post('addCategory', 'AdminController::addCategory', ['as' => 'admin.category.handler']);
 
-        $routes->get('listPost', 'AdminController::listPost', ['as' => 'admin.post']);
-        $routes->get('post', 'AdminController::postForm', ['as' => 'admin.post.form']);
-        $routes->post('addPost', 'AdminController::addPost', ['as' => 'admin.post.handler']);
+        $routes->group('posts', [], static function ($routes) {
+            $routes->get('/', 'AdminController::listPost', ['as' => 'admin.post']);
+            $routes->get('new-post', 'AdminController::postForm', ['as' => 'admin.post.form']);
+            $routes->post('create-post', 'AdminController::addPost', ['as' => 'admin.post.handler']);
+            $routes->get('get-post', 'AdminController::getPost');
+        });
+
 
         $routes->get('listNewsletter', 'AdminController::listNewsletter', ['as' => 'admin.newsletter']);
     });

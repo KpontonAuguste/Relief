@@ -20,4 +20,13 @@ class Post extends Model
         'meta-description',
         'visibility'
     ];
+
+
+    public function getAll()
+    {
+        return $this->db->table('post')
+            ->join('categorypost', 'categorypost.id = post.id')
+            ->get()
+            ->getResultArray();
+    }
 }
