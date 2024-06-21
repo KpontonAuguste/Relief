@@ -12,12 +12,12 @@ class PostulerModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['postuler_date, postuler_file, nom, prenom, adesse, telephone, date_naissance, diplome'];
+    protected $allowedFields    = [' postuler_file, nom, prenom, adresse, email, telephone, date_naissance, diplome'];
 
     // Dates
     protected $useTimestamps = false;
     protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
+    protected $createdField  = 'postuler_date';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 
@@ -37,4 +37,11 @@ class PostulerModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function  createP($data){
+        $db = \Config\Database::connect();
+        $builder = $db->table('postuler')->insert($data);
+        return $builder;
+
+    }
 }

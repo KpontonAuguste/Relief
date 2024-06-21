@@ -1,0 +1,167 @@
+CRITICAL - 2024-06-13 14:25:33 --> Invalid file: "header.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('header', [], true)
+ 3 APPPATH\Controllers\ActualiteController.php(17): view('header')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ActualiteController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ActualiteController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:26:38 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:14 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:15 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:15 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:15 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:16 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:41 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:42 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:42 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:42 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:42 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:43 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:43 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:43 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:43 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:43 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:43 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:44 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:33:44 --> Class 'CodeIgniter\Models\PostulerModel' not found
+in APPPATH\Controllers\Postuler.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:35:30 --> Invalid file: "layout/pages/postuler/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/pages/postuler/add.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/pages/postuler/add', [], true)
+ 3 APPPATH\Controllers\Postuler.php(16): view('layout/pages/postuler/add', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:37:22 --> Return value of App\Controllers\Postuler::index() must be of the type string, none returned
+in APPPATH\Controllers\Postuler.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')
+CRITICAL - 2024-06-13 14:37:22 --> Return value of App\Controllers\Postuler::index() must be of the type string, none returned
+in APPPATH\Controllers\Postuler.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Postuler->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Postuler))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\wamp64\\www\\Relief\\public\\index.php')

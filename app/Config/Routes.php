@@ -32,3 +32,10 @@ $routes->group('admin', static function ($routes) {
         $routes->post('login', 'AuthController::loginHandler', ['as' => 'admin.login.handler']);
     });
 });
+ // route pour postuler
+ $routes->get('postuler', 'Postuler::index');
+ $routes->get('add', 'Postuler::add');
+ $routes->post('creerPostuler', 'Postuler::creerPostuler',['as'=>'creer.postule']);
+ //$routes->get('creerPostuler', 'Postuler::creerPostuler');
+
+ 
