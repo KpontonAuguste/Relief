@@ -7,6 +7,7 @@ use App\Libraries\CIAuth;
 use App\Models\CategoryPost;
 use App\Models\Post;
 use App\Models\NewsletterModel;
+use App\Models\PostModel;
 
 class AdminController extends BaseController
 {
@@ -120,11 +121,10 @@ class AdminController extends BaseController
                 ]
             ],
             'featured_image' => [
-                'rules' => 'uploaded[featured_image]|is_image[featured_image]|max_size[featured_image, 2048]',
+                'rules' => 'uploaded[featured_image]|is_image[featured_image]',
                 'errors' => [
                     'uploaded' => 'Uploader une image pour votre publication',
                     'is_image' => 'Selectionner une image',
-                    'max_size' => 'Votre fichier doit etre inferieur ou egal a 2MB'
                 ]
             ]
         ]);
@@ -158,11 +158,11 @@ class AdminController extends BaseController
 
                 \Config\Services::image()
                     ->withFile($path . $filename)
-                    ->resize(450, 300, true, 'width')
+                    ->resize(1024, 768, true, 'width')
                     ->save($path . 'resized_' . $filename);
 
                 //Save the post
-                $post = new Post();
+                $post = new PostModel();
 
                 $data = array(
                     'author_id' => $userId,
@@ -188,7 +188,7 @@ class AdminController extends BaseController
 
     public function listPost()
     {
-        $post = new Post();
+        $post = new PostModel();
         $allPost = $post->getAll();
 
         $data = [
