@@ -33,9 +33,14 @@ $routes->group('admin', static function ($routes) {
     });
 });
  // route pour postuler
- $routes->get('postuler', 'Postuler::index');
+ $routes->get('/', 'Postuler::index');
  $routes->get('add', 'Postuler::add');
  $routes->post('creerPostuler', 'Postuler::creerPostuler',['as'=>'creer.postule']);
- //$routes->get('creerPostuler', 'Postuler::creerPostuler');
+//$routes->get('creerPostuler', 'Postuler::creerPostuler');
+
+
+$routes->get('/', 'Contact::index');
+ $routes->get('create', 'Contact::create');
+ $routes->post('creerContact', 'Contact::creerContact',['as'=>'creer.contact']);
 
  
