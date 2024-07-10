@@ -26,8 +26,20 @@ class PostModel extends Model
     {
         return $this->db->table('post')
             ->join('categorypost', 'categorypost.id = post.category_id')
-            ->get()
-            ->getResultArray();
+            ->get();
+    }
+
+    public function getAllWithPagination(?int $perPage = null): array
+    {
+        $this->db->table('post')
+            ->join('categorypost', 'categorypost.id = post.category_id')
+            ->join('users', 'users.id = post.author_id')
+            ->get();
+
+        return [
+            'posts' => $this->paginate($perPage),
+            'pager' => $this->pager
+        ];
     }
 
     public function recentPost()

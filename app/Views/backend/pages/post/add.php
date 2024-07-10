@@ -100,11 +100,32 @@
 <?= $this->endSection() ?>
 
 <?= $this->section('scripts') ?>
+
+<script src="/ckfinder/ckfinder"></script>
+
 <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
 
 <script>
     ClassicEditor
-        .create(document.querySelector('#editor'))
+        .create(document.querySelector('#editor'), {
+            ckfinder: {
+                uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json'
+            },
+            toolbar: {
+                items: [
+                    'ckfinder', 'uploadImage',
+                    '|', 'undo', 'redo',
+                    '|', 'heading',
+                    '|', 'fontfamily', 'fontsize', 'fontColor', 'fontBackgroundColor',
+                    '|', 'bold', 'italic', 'strikethrough', 'subscript', 'superscript', 'code',
+                    '|', 'alignment',
+                    'link', 'blockQuote', 'codeBlock',
+                    '|', 'bulletedList', 'numberedList', 'todoList', 'outdent', 'indent'
+                ],
+                shouldNotGroupWhenFull: true
+            }
+
+        })
         .catch(error => {
             console.error(error);
         });

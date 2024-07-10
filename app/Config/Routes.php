@@ -8,6 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index', ['as' => 'home.index']);
 $routes->post('newsletter', 'Newsletter::formHandler', ['as' => 'newsletter.handler']);
 $routes->get('blog', 'Post::index', ['as' => 'post.index']);
+$routes->get('article/(:num)', 'Post::read/$1');
 
 
 

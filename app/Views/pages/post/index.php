@@ -27,49 +27,46 @@
             <div class="col-lg-8 entries">
 
                 <?php
-                if ($allPost) {
-                    foreach ($allPost as $all) {
+                foreach ($posts['posts'] as $p) {
 
+                    /*echo '<pre>';
+                print_r($posts);
+                echo '</pre>';*/
                 ?>
-                        <article class="entry">
+                    <article class="entry" data-aos="fade-up">
 
-                            <div class="entry-img">
-                                <img src="/images/posts/resized_<?php echo $all['featured_image'] ?>" alt="" class="img-fluid">
+                        <div class="entry-img">
+                            <img src="/images/posts/resized_<?php echo $p['featured_image'] ?>" alt="" class="img-fluid">
+                        </div>
+
+                        <h2 class="entry-title">
+                            <a href="#"><?php echo $p['title'] ?></a>
+                        </h2>
+
+                        <div class="entry-meta">
+                            <ul>
+                                <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">Admin</a></li>
+                                <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01"><?php echo $p['created_at'] ?></time></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="entry-content">
+                            <p>
+                                <?php echo $p['content'] ?>
+                            </p>
+                            <div class="read-more">
+                                <a href="blog-single.html">Lire plus...</a>
                             </div>
+                        </div>
 
-                            <h2 class="entry-title">
-                                <a href="blog-single.html"><?php echo $all['title'] ?></a>
-                            </h2>
-
-                            <div class="entry-meta">
-                                <ul>
-                                    <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">Admin</a></li>
-                                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01"><?php echo $all['created_at'] ?></time></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="entry-content">
-                                <p>
-                                    <?php echo ellipsize($all['content'], 10) ?>
-                                </p>
-                                <div class="read-more">
-                                    <a href="blog-single.html">Read More</a>
-                                </div>
-                            </div>
-
-                        </article><!-- End blog entry -->
+                    </article><!-- End blog entry -->
                 <?php
-                    }
                 }
                 ?>
 
 
                 <div class="blog-pagination">
-                    <ul class="justify-content-center">
-                        <li><a href="#">1</a></li>
-                        <li class="active"><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                    </ul>
+                    <?php echo $posts['pager']->links(); ?>
                 </div>
 
             </div><!-- End blog entries list -->
@@ -110,7 +107,7 @@
                                 <div class="post-item clearfix">
 
                                     <img src="/images/posts/thumb_<?php echo $recent['featured_image']; ?>" alt="">
-                                    <h4><a href="blog-single.html"><?php echo $recent['title']; ?></a></h4>
+                                    <h4><a href="blog-single.html"><?php echo ellipsize($recent['title'], 10); ?></a></h4>
                                     <time datetime="2020-01-01"><?php echo $recent['created_at']; ?></time>
 
                                 </div>
@@ -123,21 +120,7 @@
                     </div><!-- End sidebar recent posts-->
 
                     <h3 class="sidebar-title">Tags</h3>
-                    <div class="sidebar-item tags">
-                        <ul>
-                            <li><a href="#">App</a></li>
-                            <li><a href="#">IT</a></li>
-                            <li><a href="#">Business</a></li>
-                            <li><a href="#">Mac</a></li>
-                            <li><a href="#">Design</a></li>
-                            <li><a href="#">Office</a></li>
-                            <li><a href="#">Creative</a></li>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="#">Smart</a></li>
-                            <li><a href="#">Tips</a></li>
-                            <li><a href="#">Marketing</a></li>
-                        </ul>
-                    </div><!-- End sidebar tags-->
+
 
                 </div><!-- End sidebar -->
 
